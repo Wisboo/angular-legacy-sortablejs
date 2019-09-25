@@ -26,11 +26,15 @@
   },
   "homepage": "https://github.com/Wisboo/angular-legacy-sortablejs#readme",
   "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "eslint": "4.0.0-alpha.0",
     "express": "^4.15.3",
     "express-static": "^1.1.0",
-    "eslint": "4.0.0-alpha.0",
     "protractor": "^5.1.2",
     "rollup": "^1.21.4",
+    "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0"
   },
