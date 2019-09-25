@@ -21,7 +21,7 @@ Sortable.mount(new AutoScroll());
 const expando = 'Sortable:wisboo-sortable';
 
 const wisbooSortable = angular.module('wisboo-sortable', []);
-wisbooSortable.constant('wisbooSortableVersion', '1.2');
+wisbooSortable.constant('wisbooSortableVersion', '1.1');
 wisbooSortable.constant('wisbooSortableConfig', {});
 wisbooSortable.directive('wisbooSortable', [
   '$parse', 'wisbooSortableConfig',
