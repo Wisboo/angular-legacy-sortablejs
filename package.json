@@ -4,6 +4,7 @@
   "description": "Customized library for Wisboo FrontEnd. Original libray Angular (legacy) directive for SortableJS.",
   "main": "angular-legacy-sortable.js",
   "scripts": {
+    "build": "rollup -c rollup.prod.js",
     "serve:example": "node example/app.js",
     "webdriver": "npm run webdriver:setup && npm run webdriver:start",
     "webdriver:setup": "./node_modules/.bin/webdriver-manager update",
@@ -28,9 +29,12 @@
     "express": "^4.15.3",
     "express-static": "^1.1.0",
     "eslint": "4.0.0-alpha.0",
-    "protractor": "^5.1.2"
+    "protractor": "^5.1.2",
+    "rollup": "^1.21.4",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
   },
   "dependencies": {
-    "sortablejs": "^1.9.0"
+    "sortablejs": "^1.10.0"
   }
 }
