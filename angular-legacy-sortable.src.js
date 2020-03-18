@@ -36,7 +36,7 @@ wisbooSortable.directive('wisbooSortable', [
         collection: '=ngModel'
       },
       link: function (scope, $el) {
-        const el = $el[0];
+        let el = $el[0];
         const options = angular.extend(scope.wisbooSortable || {}, config);
         let watchers = [];
         let offDestroy;

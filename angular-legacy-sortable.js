@@ -14,10 +14,6 @@ function _typeof(obj) {
   return _typeof(obj);
 }
 
-function _readOnlyError(name) {
-  throw new Error("\"" + name + "\" is read-only");
-}
-
 /**!
  * Sortable 1.10.0
  * @author	RubaXa   <trash@rubaxa.org>
@@ -2951,10 +2947,11 @@ _extends(Remove, {
   pluginName: 'removeOnSpill'
 });
 
+/* eslint-disable */
 Sortable.mount(new AutoScrollPlugin());
 var expando$1 = 'Sortable:wisboo-sortable';
 var wisbooSortable = angular.module('wisboo-sortable', []);
-wisbooSortable.constant('wisbooSortableVersion', '1.0');
+wisbooSortable.constant('wisbooSortableVersion', '1.1');
 wisbooSortable.constant('wisbooSortableConfig', {});
 wisbooSortable.directive('wisbooSortable', ['$parse', 'wisbooSortableConfig', function ($parse, config) {
   var removed;
@@ -3031,7 +3028,7 @@ wisbooSortable.directive('wisbooSortable', ['$parse', 'wisbooSortableConfig', fu
         });
         sortable.destroy();
         el[expando$1] = null;
-        el = (_readOnlyError("el"), null);
+        el = null;
         watchers = null;
         sortable = null;
         nextSibling = null;
